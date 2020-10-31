@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 })
 
 // Import routes and give the server access to them.
-var routes = require("./controllers/catsController.js");
+var routes = require("./controllers/burgers_controller.js");
 
 app.use(routes);
 
