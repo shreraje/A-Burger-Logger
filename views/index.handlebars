@@ -1,1 +1,33 @@
-<h1>Testing Testing</h1>
+<h1 style="text-align: center;">Eat-Da-Burger!</h1>
+
+<h3 style="text-align: center;">Welcome to a burger logger app. Submit your favorite burger type to devour it!</h3>
+
+<ul>
+    {{#each burgers}}
+    {{#if devoured}}
+
+    {{> burgers/burger-block2 devoured=true}}
+    {{/if}}
+    {{/each}}
+</ul>
+
+<div id="left">Not Devoured Yet!</div>
+
+<ul>
+    {{#each burgers}}
+    {{#unless devoured}}
+
+    {{> burgers/burger-block devoured=false}}
+    {{/unless}}
+    {{/each}}
+</ul>
+
+<h2 style="text-align: center;">Submit your favorite burger</h2>
+<form class="create-form">
+    <div style="text-align: center;" class="form-group">
+        <label for="burger">Please enter your favorite burger name:</label>
+        <input type="text" id="burger" name="name">
+        <div class="btn">
+            <button class="button" id="add" type="submit">Submit your Burger</button>
+        </div>
+</form>
