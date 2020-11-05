@@ -37,14 +37,14 @@ function printQuestionMarks(num) {
   
   // Object for all our SQL statement functions.
   var orm = {
-    selectAll: function(tableInput, cb) {
+    all: function(tableInput, cb) {
       var queryString = "SELECT * FROM " + tableInput + ";";
       connection.query(queryString, function(err, result) {
         if (err) throw err;
         cb(result);
       });
     },
-    insertOne: function(table, cols, vals, cb) {
+    createOne: function(table, cols, vals, cb) {
       var queryString = "INSERT INTO " + table;
   
       queryString += " (";

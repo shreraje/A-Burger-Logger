@@ -1,2 +1,6 @@
 node_modules/
-PW/
+.env
+.DS_Store
+public/.DS_Store
+public/assets/.DS_Store
+views/partials/
