@@ -1,0 +1,11 @@
+*{
+    color: black;
+}
+
+body{
+    background-color: cadetblue;
+}
+
+h1, h3{
+    text-align: center;
+}
