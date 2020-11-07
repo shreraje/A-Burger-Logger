@@ -12,9 +12,9 @@
             {{#unless devoured}}
             {{!-- {{> burgers/burger-block1 devoured=false}} --}}
             <li>
-                <button class="change-devoured" data-id="{{id}}" data-devouredState="false">{{burger_name}}</button>
+                <button class="new-burger" data-id="{{id}}" data-devouredState="false">{{burger_name}}</button>
 
-                <button class="change-devoured" data-id="{{this.id}}">Devour!</button>
+                <button class="new-burger" data-id="{{this.id}}">Devour!</button>
             </li>
 
             {{/unless}}
@@ -22,7 +22,7 @@
         </ul>
     </div>
     <div class="col-6">
-       <h4> Devoured! </h4>
+        <h4> Devoured! </h4>
         <ul>
             {{#each burgers}}
             {{#if devoured}}
@@ -30,7 +30,7 @@
             <li>
                 <button class="dev" data-id="{{id}}" data-devouredState="true">{{burger_name}}</button>
 
-                <button class="delete-burger" data-id="{{this.id}}">Delete!</button>
+                <button class="del-burger" data-id="{{this.id}}">Delete!</button>
 
             </li>
             {{/if}}
@@ -40,13 +40,10 @@
 </div>
 
 
-<h4 style="text-align: center;">Submit your favorite burger</h4>
+<h4>Submit your favorite burger</h4>
 <form id="add-form" class="create-form">
     <div style="text-align: center;" class="form-group">
         <label for="burger">Please enter your favorite burger name:</label>
         <input type="text" id="burger" name="name">
         <button type="submit" class="btn btn-warning" id="add">Add your Burger</button>
-        {{!-- <div class="btn">
-            <button class="button" id="add" type="submit">Submit your Burger</button>
-        </div> --}}
 </form>
