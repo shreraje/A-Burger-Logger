@@ -21,7 +21,7 @@ $(function () {
       );
     });
 
-  $(".change-devoured").on("click", function (event) {
+  $(".new-burger").on("click", function (event) {
     var id = $(this).data("id");
     var isDevoured = $(this).data("isdevoured");
 
@@ -43,7 +43,7 @@ $(function () {
   });
 
 
-  $(".delete-burger").on("click", function (event) {
+  $(".del-burger").on("click", function (event) {
     var id = $(this).data("id");
 
     // Send the DELETE request.
