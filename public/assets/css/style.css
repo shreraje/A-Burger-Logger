@@ -9,14 +9,56 @@ body{
 h1, h3, h4{
     text-align: center;
 }
+h4{
+    font-size: 30px; 
+    font-weight: bold; 
+}
 
-button{
+.label{
+    font-size: 30px; 
+    font-weight: bold;
+    font-style: oblique ;
+}
+.btn{
+    font-size: 20px; 
+    font-weight: bold;
+}
+#burger{
+    font    : 1.4em/1.5em "handwriting", cursive, sans-serif;
+    /* border  : none; */
+    padding : 0 10px;
+    margin  : 0;
+    width   : 15%;
+    background : aliceblue;
+}
+
+#add{
+    background-color: rgb(143, 143, 201);
+    padding: 15px;
+    font-style: italic;
+    font-size: 25px; 
+    font-weight: bold;
+    margin: auto;
+    border-radius: 11%;  
+}
+
+.del-burger{
+    background-color: red;
     padding: 15px;
     font-style: italic;
     font-size: 20px; 
     font-weight: bold;
     margin: auto;
-    border-radius: 30%;  
+    border-radius: 11%;  
+}
+.new-burger{
+    background-color: greenyellow;
+    padding: 15px;
+    font-style: italic;
+    font-size: 20px; 
+    font-weight: bold;
+    margin: auto;
+    border-radius: 11%;  
 }
 
 button:hover{
@@ -25,4 +67,28 @@ button:hover{
     transform: translateY(-5px);
     border: 2px solid lightgray;
     transition: 0.3s;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.dev-burger{
+    background-color: aqua;
+    padding: 15px;
+    font-style: italic;
+    font-size: 20px; 
+    font-weight: bold;
+    margin: auto;
+    border-radius: 30%;  
+}
+
+.dev{
+    background-color: skyblue;
+    padding: 15px;
+    font-style: italic;
+    font-size: 20px; 
+    font-weight: bold;
+    margin: auto;
+    border-radius: 30%;  
 }

@@ -12,7 +12,7 @@
             {{#unless devoured}}
             {{!-- {{> burgers/burger-block1 devoured=false}} --}}
             <li>
-                <button class="new-burger" data-id="{{id}}" data-devouredState="false">{{burger_name}}</button>
+                <button class="dev-burger" data-id="{{id}}" data-devouredState="false">{{burger_name}}</button>
 
                 <button class="new-burger" data-id="{{this.id}}">Devour!</button>
             </li>
@@ -43,7 +43,7 @@
 <h4>Submit your favorite burger</h4>
 <form id="add-form" class="create-form">
     <div style="text-align: center;" class="form-group">
-        <label for="burger">Please enter your favorite burger name:</label>
+        <label class="label" for="burger">Please enter your favorite burger name:</label>
         <input type="text" id="burger" name="name">
-        <button type="submit" class="btn btn-warning" id="add">Add your Burger</button>
+        <button type="submit" class="form control" id="add">Add your Burger</button>
 </form>
