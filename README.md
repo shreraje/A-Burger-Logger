@@ -37,7 +37,7 @@ To check how this application works, user will have to follow the following step
 - Now, press "CTRL" & click on "http://localhost:8080", browser will open with this app.
 
 ## Technologies
-- Node.js, Express, JavaScript, HTML & CSS.
+- Node.js, MySQL, Express, Express-Handlebars, Dotenv, JAWSDB-MySQLJavaScript, Heroku, Jquery, HTML & CSS.
 
 ## Screenshot
 Deployed App Homepage:
